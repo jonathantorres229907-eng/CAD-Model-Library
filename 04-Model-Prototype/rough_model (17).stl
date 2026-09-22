@@ -1,0 +1,170 @@
+solid model
+facet normal 0 0 1
+outer loop
+vertex -20 -20 4
+vertex 20 -20 4
+vertex 20 20 4
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex -20 -20 4
+vertex 20 20 4
+vertex -20 20 4
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex -20 -20 4
+vertex -20 20 4
+vertex -20 20 2
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex -20 -20 4
+vertex -20 20 2
+vertex -20 -20 2
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 20 -20 4
+vertex 20 20 4
+vertex 20 20 2
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 20 -20 4
+vertex 20 20 2
+vertex 20 -20 2
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex -20 -20 2
+vertex 20 -20 2
+vertex 20 20 2
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex -20 -20 2
+vertex 20 20 2
+vertex -20 20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 0
+vertex 20 -20 0
+vertex 20 20 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 0
+vertex 20 20 0
+vertex -20 20 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 0
+vertex -20 20 0
+vertex -20 20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 0
+vertex -20 20 2
+vertex -20 -20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 20 -20 0
+vertex 20 20 0
+vertex 20 20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 20 -20 0
+vertex 20 20 2
+vertex 20 -20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 2
+vertex 20 -20 2
+vertex 20 20 2
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex -20 -20 2
+vertex 20 20 2
+vertex -20 20 2
+endloop
+endfacet
+facet normal 0.342 0.342 0.866
+outer loop
+vertex -20 -20 4
+vertex -20 20 4
+vertex -18.5 -18.5 2
+endloop
+endfacet
+facet normal 0.342 0.342 0.866
+outer loop
+vertex -20 20 4
+vertex 20 20 4
+vertex 18.5 18.5 2
+endloop
+endfacet
+facet normal 0.342 0.342 0.866
+outer loop
+vertex 20 20 4
+vertex 20 -20 4
+vertex 18.5 -18.5 2
+endloop
+endfacet
+facet normal 0.342 0.342 0.866
+outer loop
+vertex 20 -20 4
+vertex -20 -20 4
+vertex -18.5 18.5 2
+endloop
+endfacet
+facet normal -0.342 -0.342 0.866
+outer loop
+vertex -20 -20 2
+vertex -20 20 2
+vertex -18.5 -18.5 0
+endloop
+endfacet
+facet normal -0.342 -0.342 0.866
+outer loop
+vertex -20 20 2
+vertex 20 20 2
+vertex 18.5 18.5 0
+endloop
+endfacet
+facet normal -0.342 -0.342 0.866
+outer loop
+vertex 20 20 2
+vertex 20 -20 2
+vertex 18.5 -18.5 0
+endloop
+endfacet
+facet normal -0.342 -0.342 0.866
+outer loop
+vertex 20 -20 2
+vertex -20 -20 2
+vertex -18.5 18.5 0
+endloop
+endfacet
+endsolid model

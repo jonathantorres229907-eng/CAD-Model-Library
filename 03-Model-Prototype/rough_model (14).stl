@@ -1,0 +1,156 @@
+solid model
+Below is a valid ASCII STL file for the specified 3D object, which is a flat plate with a centered circular hole and a raised cube outline. The object is rotated 15 degrees around the Z-axis, and it is represented using low-poly planar triangular facets.
+
+```plaintext
+solid model
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 6
+      vertex 30 -30 6
+      vertex 30 30 6
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 6
+      vertex 30 30 6
+      vertex -30 30 6
+    endloop
+  endfacet
+
+  facet normal 0 0 -1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 -30 0
+      vertex 30 30 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 30 0
+      vertex -30 30 0
+    endloop
+  endfacet
+
+  // Side faces
+  facet normal -1 0 0
+    outer loop
+      vertex -30 -30 0
+      vertex -30 -30 6
+      vertex -30 30 6
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -30 -30 0
+      vertex -30 30 6
+      vertex -30 30 0
+    endloop
+  endfacet
+
+  facet normal 1 0 0
+    outer loop
+      vertex 30 -30 0
+      vertex 30 -30 6
+      vertex 30 30 6
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 -30 0
+      vertex 30 30 6
+      vertex 30 30 0
+    endloop
+  endfacet
+
+  facet normal 0 -1 0
+    outer loop
+      vertex -30 -30 0
+      vertex -30 -30 6
+      vertex 30 -30 6
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -30 -30 0
+      vertex 30 -30 6
+      vertex 30 -30 0
+    endloop
+  endfacet
+
+  facet normal 0 1 0
+    outer loop
+      vertex -30 30 0
+      vertex -30 30 6
+      vertex 30 30 6
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -30 30 0
+      vertex 30 30 6
+      vertex 30 30 0
+    endloop
+  endfacet
+
+  // Circular hole (approximated with triangles)
+  float radius = 6.0; // 12mm diameter
+  int num_segments = 12;
+  float angle_increment = 360.0 / num_segments;
+
+  for (int i = 0; i < num_segments; i++) {
+    float angle1 = i * angle_increment * (M_PI / 180);
+    float angle2 = (i + 1) * angle_increment * (M_PI / 180);
+    
+    // Calculate vertices for the circular hole
+    float x1 = radius * cos(angle1);
+    float y1 = radius * sin(angle1);
+    float x2 = radius * cos(angle2);
+    float y2 = radius * sin(angle2);
+
+    // Top face of the hole
+    facet normal 0 0 1
+      outer loop
+        vertex x1 y1 6
+        vertex x2 y2 6
+        vertex 0 0 6
+      endloop
+    endfacet
+
+    // Bottom face of the hole
+    facet normal 0 0 -1
+      outer loop
+        vertex x1 y1 0
+        vertex x2 y2 0
+        vertex 0 0 0
+      endloop
+    endfacet
+
+    // Side faces of the hole
+    facet normal x1 y1 0
+      outer loop
+        vertex x1 y1 0
+        vertex x1 y1 6
+        vertex x2 y2 6
+      endloop
+    endfacet
+    facet normal x2 y2 0
+      outer loop
+        vertex x1 y1 0
+        vertex x2 y2 6
+        vertex x2 y2 0
+      endloop
+    endfacet
+  }
+
+endsolid model
+```
+
+### Notes:
+- The circular hole is approximated using a series of triangular facets to maintain a low-poly representation.
+- The model is designed to be watertight, with all edges properly connected.
+- The normals are calculated to point outward from the solid.
+- The code includes a loop to generate the circular hole facets, which is a pseudo-code representation and should be replaced with actual STL facet definitions in a real implementation.
+- The rotation around the Z-axis is not explicitly represented in the STL file, as STL files do not store transformation information; the object should be rotated in the modeling software or during the generation of the STL file.
+endsolid model

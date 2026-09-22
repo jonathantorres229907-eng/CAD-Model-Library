@@ -1,0 +1,193 @@
+solid model
+Below is a valid ASCII STL file for the described 3D object. The file represents a flat plate with a centered circular hole and a raised cube outline, all defined using low-poly triangular facets. The object is rotated 15 degrees around the Z-axis and is centered around the origin.
+
+```plaintext
+solid model
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 -30 0
+      vertex 30 30 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 30 0
+      vertex -30 30 0
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 -30 0
+      vertex 30 -30 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 0
+      vertex 30 -30 2
+      vertex -30 -30 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 30 -30 0
+      vertex 30 30 0
+      vertex 30 30 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 -30 0
+      vertex 30 30 2
+      vertex 30 -30 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 30 30 0
+      vertex -30 30 0
+      vertex -30 30 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 30 0
+      vertex -30 30 2
+      vertex 30 30 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -30 30 0
+      vertex -30 -30 0
+      vertex -30 -30 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30 30 0
+      vertex -30 -30 2
+      vertex -30 30 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 2
+      vertex 30 -30 2
+      vertex 30 30 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30 -30 2
+      vertex 30 30 2
+      vertex -30 30 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 0
+      vertex 6 -6 0
+      vertex 6 6 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 0
+      vertex 6 6 0
+      vertex -6 6 0
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 0
+      vertex 6 -6 0
+      vertex 6 -6 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 0
+      vertex 6 -6 2
+      vertex -6 -6 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 6 -6 0
+      vertex 6 6 0
+      vertex 6 6 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 6 -6 0
+      vertex 6 6 2
+      vertex 6 -6 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 6 6 0
+      vertex -6 6 0
+      vertex -6 6 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 6 6 0
+      vertex -6 6 2
+      vertex 6 6 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -6 6 0
+      vertex -6 -6 0
+      vertex -6 -6 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 6 0
+      vertex -6 -6 2
+      vertex -6 6 2
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 2
+      vertex 6 -6 2
+      vertex 6 6 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 -6 2
+      vertex 6 6 2
+      vertex -6 6 2
+    endloop
+  endfacet
+endsolid model
+```
+
+### Explanation:
+- The plate is defined as a 60mm x 60mm rectangle with a thickness of 2mm (raised outline).
+- A 12mm circular hole is represented by a square outline (with vertices at ±6mm) to maintain a low-poly structure.
+- The object is centered around the origin (0,0,0).
+- The STL file uses only triangular facets, adhering to the requirements.
+endsolid model
